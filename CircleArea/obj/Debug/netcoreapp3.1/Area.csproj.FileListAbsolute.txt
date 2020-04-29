@@ -1,0 +1,9 @@
+C:\Users\mrava\source\repos\MindBox\CircleArea\bin\Debug\netcoreapp3.1\Area.deps.json
+C:\Users\mrava\source\repos\MindBox\CircleArea\bin\Debug\netcoreapp3.1\Area.dll
+C:\Users\mrava\source\repos\MindBox\CircleArea\bin\Debug\netcoreapp3.1\Area.pdb
+C:\Users\mrava\source\repos\MindBox\CircleArea\obj\Debug\netcoreapp3.1\Area.csprojAssemblyReference.cache
+C:\Users\mrava\source\repos\MindBox\CircleArea\obj\Debug\netcoreapp3.1\Area.csproj.CoreCompileInputs.cache
+C:\Users\mrava\source\repos\MindBox\CircleArea\obj\Debug\netcoreapp3.1\Area.AssemblyInfoInputs.cache
+C:\Users\mrava\source\repos\MindBox\CircleArea\obj\Debug\netcoreapp3.1\Area.AssemblyInfo.cs
+C:\Users\mrava\source\repos\MindBox\CircleArea\obj\Debug\netcoreapp3.1\Area.dll
+C:\Users\mrava\source\repos\MindBox\CircleArea\obj\Debug\netcoreapp3.1\Area.pdb

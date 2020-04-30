@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Channels;
 using System.Threading.Tasks;
@@ -18,25 +19,39 @@ namespace Area
             b = triangle.SideB;
             c = triangle.SideC;
         }
-        public void GetRightTriangle()
+        public bool GetRightTriangle()
         {
+            bool flag = false;
             if (a > b && a > c)
-                CheckRightTriangle(a, b, c);
+            {
+                flag = CheckRightTriangle(a, b, c, flag);
+                return flag;
+            }
+
             if (b > a && b > c)
-                CheckRightTriangle(b, a, c);
+            {
+                flag = CheckRightTriangle(b, a, c, flag);
+                return flag;
+            }
+
             if (c > a && c > b)
-                CheckRightTriangle(c, a, b);
+            {
+                flag =  CheckRightTriangle(c, a, b, flag);
+                return flag;
+            }
             else
-                Console.WriteLine("Треугольник не прямоугольный");
+                return flag;
         }
 
-        private void CheckRightTriangle(double biggerSide, double smallSide, double smallSide1)
+        private bool CheckRightTriangle(double biggerSide, double smallSide, double smallSide1, bool flag)
         {
-            Console.WriteLine(
-                Math.Round(Math.Pow(biggerSide, 2), 2) ==
-                Math.Round(Math.Pow(smallSide, 2), 2) + Math.Round(Math.Pow(smallSide1, 2), 2)
-                    ? "Треугольник прямоугольный"
-                    : "Треугольник не прямоугольный");
+            if (Math.Round(Math.Pow(biggerSide, 2), 2) ==
+                Math.Round(Math.Pow(smallSide, 2), 2) + Math.Round(Math.Pow(smallSide1, 2), 2))
+            {
+                return flag = true;
+            }
+            else
+               return flag;
         }
     }
 }

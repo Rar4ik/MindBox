@@ -24,7 +24,8 @@ namespace Area.Implementation
         public double GetTriangleArea()
         {
             Pythagoras p = new Pythagoras(_triangle);
-            p.GetRightTriangle();
+            var result = p.GetRightTriangle();
+            Console.WriteLine(result ? "Треугольник прямоугольный" : "Треугольник не прямоугольный");
 
             SemiPerimeterCalculation semiPerimeter = new SemiPerimeterCalculation();
             var semiPerimeterResult = semiPerimeter.GetSemiPerimeter(_triangle);

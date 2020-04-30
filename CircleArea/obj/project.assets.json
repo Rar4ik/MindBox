@@ -15,9 +15,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrava\\source\\repos\\MindBox\\CircleArea\\CircleArea.csproj",
-      "projectName": "CircleArea",
-      "projectPath": "C:\\Users\\mrava\\source\\repos\\MindBox\\CircleArea\\CircleArea.csproj",
+      "projectUniqueName": "C:\\Users\\mrava\\source\\repos\\MindBox\\CircleArea\\Area.csproj",
+      "projectName": "Area",
+      "projectPath": "C:\\Users\\mrava\\source\\repos\\MindBox\\CircleArea\\Area.csproj",
       "packagesPath": "C:\\Users\\mrava\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\mrava\\source\\repos\\MindBox\\CircleArea\\obj\\",
       "projectStyle": "PackageReference",

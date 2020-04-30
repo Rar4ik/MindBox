@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Area.Implementation;
+﻿using Area.Implementation;
 using Area.Interfaces;
 using Area.Model;
 
-namespace MindBox
+namespace Area.Handler
 {
     public class ShapeChooser
     {

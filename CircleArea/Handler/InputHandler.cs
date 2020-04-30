@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 
-namespace MindBox
+namespace Area.Handler
 {
     public class InputHandler
     {
@@ -13,10 +12,11 @@ namespace MindBox
             List<double> listOfDigits = new List<double>();
             foreach (var s in trim)
             {
-                double.TryParse(s, out double result);
+                bool val = double.TryParse(s,NumberStyles.Any, CultureInfo.InvariantCulture, out double result);
                 listOfDigits.Add(result);
+                if (val == false)
+                    throw new ArgumentException("Введено не число!");
             }
-
             return listOfDigits;
         }
     }

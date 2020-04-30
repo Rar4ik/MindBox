@@ -12,7 +12,7 @@ namespace Area.Implementation.CircleServices
         {
             double square = c.MainSide * c.MainSide;
             double circleResult = _p * square;
-            return circleResult;
+            return Math.Round(circleResult,2);
         }
     }
 }

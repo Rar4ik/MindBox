@@ -1,4 +1,5 @@
-﻿using Area.Model;
+﻿using System;
+using Area.Model;
 
 namespace Area.Implementation.TriangleServices
 {
@@ -8,7 +9,7 @@ namespace Area.Implementation.TriangleServices
         public double GetSemiPerimeter(Triangle t)
         {
             var sPerimeter = (t.MainSide + t.SideB + t.SideC) / two;
-            return sPerimeter;
+            return Math.Round(sPerimeter, 2);
         }
     }
 }

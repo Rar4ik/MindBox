@@ -23,6 +23,9 @@ namespace Area.Implementation
 
         public double GetTriangleArea()
         {
+            Pythagoras p = new Pythagoras(_triangle);
+            p.GetRightTriangle();
+
             SemiPerimeterCalculation semiPerimeter = new SemiPerimeterCalculation();
             var semiPerimeterResult = semiPerimeter.GetSemiPerimeter(_triangle);
 

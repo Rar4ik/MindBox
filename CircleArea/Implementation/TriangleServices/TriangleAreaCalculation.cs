@@ -9,7 +9,13 @@ namespace Area.Implementation.TriangleServices
         {
             double sides = per * (per - t.MainSide) * (per - t.SideB) * (per - t.SideC);
             double result = Math.Sqrt(sides);
-            return result;
+            if (result == 0)
+            {
+                Console.WriteLine("Cумма длин каждых двух сторон должна быть больше длины третьей стороны");
+                return 0;
+            }
+            else
+                return Math.Round(result,2);
         }
     }
 }

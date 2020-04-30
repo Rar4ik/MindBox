@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
 using System.Linq;
-using System.Text;
 using Area.Interfaces;
 using Area.Model;
 
-namespace MindBox
+namespace Area.Handler
 {
     public class ShapeCreator
     {
